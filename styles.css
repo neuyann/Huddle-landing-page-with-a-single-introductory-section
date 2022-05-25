@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root{
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+}
+
+html {
+  box-sizing: border-box;
+ 
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin-top: auto;
+  margin-bottom: auto;
+  }
+
+
+
+body{
+  background-image: url('https://raw.githubusercontent.com/neuyann/Huddle-landing-page-with-a-single-introductory-section/d82f03b98031b6d371455140a43144dbce1b0b26/images/bg-desktop.svg');
+  background-color: var(--violet);
+  color: white;
+  padding: 40px 60px;
+}
+
+main{
+  display: flex;
+  
+}
+
+#huddle{
+  width: 200px;
+}
+
+.leftcontainer{
+  margin-top: 80px;
+}
+
+.rightcontainer{
+  margin-left: 50px;
+  position: relative;
+  bottom: 40px;
+  
+}
+h1{
+  font-family: Poppins ;
+  padding-right: 100px;
+}
+
+p{
+  font-family: Open Sans;
+  margin-top: 20px;
+  padding-right: 30px;
+}
+
+button{
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 15px;
+  background: white;
+  color: var(--violet);
+  border: solid 1px transparent;
+  border-radius: 30px;
+  padding: 15px 60px;
+  margin-top: 20px;
+  box-shadow: 0 8px 40px --soft-magenta;
+}
+
+button:hover{
+  color: white;
+  background: var(--violet);
+  border: solid 1px white;
+  cursor: pointer;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.socialmedia{
+    
+}
+.socialmedia img{
+  width: 30px;
+  filter: invert(1);
+    margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  body{
+  background-image: url('https://raw.githubusercontent.com/neuyann/Huddle-landing-page-with-a-single-introductory-section/2b4d996b94963c306fa31283c199a0afaf365ebf/images/bg-mobile.svg');
+  background-color: var(--violet);
+  color: white;
+    padding: 30px 20px;}
+  main{
+    flex-direction: column;
+  }
+  #huddle{
+    width: 120px;
+  }
+  
+  
+  .leftcontainer{
+    text-align: center;
+    margin-top: 50px;
+  }
+  .leftcontainer img{
+    width: 250px;
+  }
+  
+  .rightcontainer {
+    position: static;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 50px;
+   
+  }
+  .rightcontainer h1{
+    font-size: 20px;
+    padding-right: 0;
+   
+  }
+  
+  p{
+    padding-right: 0;
+  }
+  
+  footer{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .attribution{
+    order: 2;
+    font-size: 10px;
+    text-elign: center;
+  }
+  
+  .socialmedia{
+    margin-top: 30px;
+  }
+ #fb{
+    margin-left: 20px;
+  }
+  
+  
+}
